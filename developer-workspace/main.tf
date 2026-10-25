@@ -2,6 +2,9 @@ terraform {
   backend "local" {
     path = "terraform.tfstate"
   }
+  required_providers {
+    aws = "~> 3.7.0"
+  }
 }
 
 provider "vault" {
